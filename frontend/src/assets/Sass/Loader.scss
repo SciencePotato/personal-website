@@ -9,6 +9,7 @@ $secondary-accent-color: #FFD200;
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 100002;
     > div {
         flex: 1;
     }

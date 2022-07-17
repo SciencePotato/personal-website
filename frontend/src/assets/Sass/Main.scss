@@ -8,3 +8,13 @@ body {
     background-color: $primary-color;
     overflow: hidden;
 }
+
+main { 
+    display: block;
+    position: relative;
+    > section {
+        position: relative;
+        left: 3.3rem;
+        top: 0;
+    }
+}

@@ -15,10 +15,10 @@ aside {
     overflow: hidden;
     z-index: 100001;
     transition: width 1s linear;
-    -webkit-transform: width 1s linear;
 
     > section {
         min-width: 3.3rem;
+        padding: 1rem 0rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -34,9 +34,16 @@ aside {
                 place-items: center;
                 flex: 10;
                 font-size: 2rem;
+                transition: all ease-in 0.1s;
+
                 > p {
                     margin: 0px;
                     padding: 0px;
+                    font-weight: 700;
+                }
+
+                &:hover {
+                    color: $accent-color;
                 }
             }
             &:last-of-type {
@@ -44,15 +51,18 @@ aside {
             }
             > svg {
                 transform: rotateZ(90deg);
+                transition: all ease-in-out 0.1s;
+                &:hover {
+                    fill: $accent-color;
+                }
             }
         }
     }
 
     .contrastMode {
-        transition: all ease-out 0.25s;
+        transition: all ease-out 0.1s;
         &:hover {
             transform: rotateZ(0deg);
-            fill: $secondary-accent-color;
         }
     }
 }

@@ -1,3 +1,63 @@
+aside {
+  background-color: #E2DEDE;
+  position: fixed;
+  display: flex;
+  left: 0;
+  bottom: 0;
+  width: 3.3rem;
+  top: 0;
+  overflow: hidden;
+  z-index: 100001;
+  transition: width 1s linear;
+  -webkit-transform: width 1s linear;
+}
+aside > section {
+  min-width: 3.3rem;
+  padding: 1rem 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+aside > section > div:first-of-type {
+  flex: 1;
+  display: grid;
+  place-items: center;
+}
+aside > section > div:nth-of-type(2) {
+  display: grid;
+  place-items: center;
+  flex: 10;
+  font-size: 2rem;
+  transition: all ease-in 0.1s;
+}
+aside > section > div:nth-of-type(2) > p {
+  margin: 0px;
+  padding: 0px;
+  font-weight: 700;
+}
+aside > section > div:nth-of-type(2):hover {
+  color: #F04C23;
+}
+aside > section > div:last-of-type {
+  flex: 1;
+}
+aside > section > div > svg {
+  transform: rotateZ(90deg);
+  transition: all ease-in-out 0.1s;
+}
+aside > section > div > svg:hover {
+  fill: #F04C23;
+}
+aside .contrastMode {
+  transition: all ease-out 0.1s;
+}
+aside .contrastMode:hover {
+  transform: rotateZ(0deg);
+}
 
+.is-active {
+  min-width: 23.3rem;
+}
 
 /*# sourceMappingURL=SideBar.css.map */

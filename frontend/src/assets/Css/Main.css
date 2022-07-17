@@ -3,4 +3,14 @@ body {
   overflow: hidden;
 }
 
+main {
+  display: block;
+  position: relative;
+}
+main > section {
+  position: relative;
+  left: 3.3rem;
+  top: 0;
+}
+
 /*# sourceMappingURL=Main.css.map */
