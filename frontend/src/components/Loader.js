@@ -1,12 +1,29 @@
-import React from "react";
+import LoaderDiv from "./LoaderDiv";
+import { useState } from "react";
 
 const numOfBlock = 6;       
-const delayTime = 200;      // 200ms
+const animationDelayTime = 200;
 
 const Loader = () => {
+    const [blockWidth, setBlockWidth] = useState(window.innerWidth / numOfBlock) 
+
+    window.onresize = () => {
+        setBlockWidth(window.innerWidth / numOfBlock);
+    }
+
+    let divGroup = [];  
     for (let i = 0; i < numOfBlock; i++) {
-        console.log(i);
-    }   
+        let currentDelay = animationDelayTime * (numOfBlock - i - 1);
+        divGroup.push(<LoaderDiv width={blockWidth} delay={currentDelay} order={i} key={i}/>)
+    }
+
+    return (
+        <>
+            <section className="loader">
+                {divGroup}
+            </section>
+        </>
+    )
 };
 
 export default Loader;

@@ -1,0 +1,11 @@
+.loader {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.loader > div {
+  flex: 1;
+}
+
+/*# sourceMappingURL=Loader.css.map */

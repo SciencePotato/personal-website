@@ -1,0 +1,23 @@
+.loaderDiv {
+  background-color: #000;
+  height: 20px;
+  animation-name: moveUp;
+  animation-duration: 750ms;
+  height: 100vh;
+}
+
+.full-Height {
+  transform: translateY(100vh);
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(0vh);
+  }
+  98% {
+    transform: translateY(100vh);
+  }
+}
+@keyframes moveDown {}
+
+/*# sourceMappingURL=LoaderDiv.css.map */

@@ -1,0 +1,34 @@
+$primary-color: #f2f1f1;
+$secondary-primary-color: #E2DEDE;
+$contrast-color: #000;
+$accent-color: #F04C23;
+$secondary-accent-color: #FFD200;
+
+.loaderDiv {
+    background-color: $contrast-color;
+    height: 20px;
+    animation-name: moveUp;
+    animation-duration: 750ms;
+    height: 100vh;
+}
+
+.full-Height {
+    transform: translateY(100vh);
+}
+
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(0vh);
+    }
+
+
+    98% {
+        transform: translateY(100vh);
+    }
+    
+}
+
+@keyframes moveDown {
+    
+}
