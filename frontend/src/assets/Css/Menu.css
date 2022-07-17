@@ -5,6 +5,67 @@
   position: relative;
   flex-grow: 1;
   flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f1f1;
+}
+.menu > div:first-of-type {
+  min-height: 80vh;
+  display: grid;
+  place-content: end center;
+  padding-bottom: 4rem;
+}
+.menu > div:first-of-type > div {
+  display: flex;
+  flex-direction: column;
+}
+.menu > div:first-of-type > div > h1 {
+  flex: 1;
+  font-size: 2rem;
+  margin: 2rem 0rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0px;
+  cursor: pointer;
+  position: relative;
+}
+.menu > div:first-of-type > div > h1:hover::before {
+  padding: 1rem 2px;
+}
+.menu > div:first-of-type > div > h1:hover::after {
+  padding: 2px 3rem;
+}
+.menu > div:first-of-type > div > h1::before {
+  content: "";
+  transition: all ease-out 0.1s;
+  position: absolute;
+  bottom: 0rem;
+  left: -1rem;
+  padding: 2px;
+  background-color: #F04C23;
+}
+.menu > div:first-of-type > div > h1::after {
+  content: "";
+  transition: all ease-out 0.1s;
+  position: absolute;
+  bottom: -0.5rem;
+  left: -1rem;
+  padding: 2px;
+  background-color: #F04C23;
+}
+.menu > div:last-of-type {
+  min-height: 10vh;
+}
+
+@media screen and (max-height: 500px) {
+  .menu > div:first-of-type {
+    padding-bottom: 1rem;
+    place-content: center;
+  }
+  .menu > div:first-of-type > div > h1 {
+    font-size: 2rem;
+    padding: 0.5rem 0px;
+    margin: 0px;
+  }
 }
 
 /*# sourceMappingURL=Menu.css.map */

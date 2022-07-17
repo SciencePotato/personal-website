@@ -10,12 +10,13 @@ aside {
     display: flex;
     left: 0;
     bottom: 0;
+    min-width: 3.3rem;
     width: 3.3rem;
     top: 0;
     overflow: hidden;
     z-index: 100001;
-    transition: width 1s linear;
-
+    transition: all ease-out 0.5s;
+    outline: none;
     > section {
         min-width: 3.3rem;
         padding: 1rem 0rem;
@@ -24,6 +25,7 @@ aside {
         justify-content: center;
         align-items: center;
         > div {
+            cursor: pointer;
             &:first-of-type {
                 flex: 1;
                 display: grid;
@@ -41,7 +43,6 @@ aside {
                     padding: 0px;
                     font-weight: 700;
                 }
-
                 &:hover {
                     color: $accent-color;
                 }
@@ -69,4 +70,22 @@ aside {
 
 .is-active{
     min-width: 23.3rem;
+}
+
+.close {
+    left: 100vw;
+    top: 100vh;
+}
+
+.open {
+    left: 23.3rem;
+    top: 0rem;
+}
+
+.rightSide{
+    transition: all ease-out 0.5s;
+    position: absolute;
+    width: calc(100vw - 20rem);
+    background-color: $accent-color;
+    height: 100vh;
 }
