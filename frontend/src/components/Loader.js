@@ -2,7 +2,7 @@ import LoaderDiv from "./LoaderDiv";
 import { useState } from "react";
 
 const numOfBlock = 6;       
-const animationDelayTime = 200;
+const animationDelayTime = 75;
 
 const Loader = () => {
     const [blockWidth, setBlockWidth] = useState(window.innerWidth / numOfBlock) 

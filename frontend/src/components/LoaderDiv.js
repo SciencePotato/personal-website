@@ -9,12 +9,8 @@ const LoaderDiv = (props) => {
             if (props.order === 5) {
                 const Loader = document.getElementsByClassName("loaderDiv")[props.order].parentElement;
                 setTimeout(() =>{
-                    Loader.style.zIndex = "-1";
                     Loader.style.display = "none";
-                    for (let i = 0; i < Loader.children.length; i++) {
-                        document.getElementsByClassName("loaderDiv")[i].classList.remove("full-Height");
-                    }
-               }, 1800);
+               }, 1000);
             }
         }, props.delay);}}
         >

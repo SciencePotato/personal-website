@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import Loader from "../components/Loader";
+import SideBar from "../components/SideBar"
 
 // https://yo-star.com/pc/images/wangge_bg.png
 const MainPage = () =>{
@@ -10,18 +11,25 @@ const MainPage = () =>{
     }, []);
 
     return (
-        <main>
+        <> 
+            <SideBar/>
             {loaded && (
                 <Loader/>
             )}
-            <h1> Testing</h1>
-            <button onClick={function (){ 
-                setLoaded(false);
-                setTimeout(() => {
-                    setLoaded(true);
-                }, 1000); 
-            }}> Click</button>
-        </main>
+            <main>
+                <section>
+                    <h1> Testing</h1>
+                    <button onClick={() => {
+                            setLoaded(false);
+                            setTimeout(() => {
+                                setLoaded(true);
+                            }, 400);
+                        }
+                    }> Testing Btn </button>
+                </section>
+            </main>
+        </>
+
     )
 };
 
