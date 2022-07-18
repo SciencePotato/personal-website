@@ -32,11 +32,9 @@ $secondary-accent-color: #FFD200;
                     cursor: pointer;
                     position: relative;
                     &:hover {
+                        color: $accent-color;
                         &::before {
                             padding: 1rem 2px;
-                        }
-                        &::after {
-                            padding: 2px 3rem;
                         }
                     }
 
@@ -57,13 +55,26 @@ $secondary-accent-color: #FFD200;
                         bottom: -0.5rem;
                         left: -1rem;
                         padding: 2px;
-                        background-color: $accent-color;
+                        background-color: $contrast-color;
                     }
                 }
             }
         }
         &:last-of-type{
             min-height: 10vh;
+            display: flex;
+            text-align: center;
+            > div {
+                flex: 1;
+                > svg {
+                    border-radius: 0.5rem;       
+                    cursor: pointer;
+                    transition: all ease-out 0.1s;
+                    &:hover {
+                        fill: $accent-color;
+                    }
+                }
+            }
         }
     }
 }   

@@ -4,6 +4,10 @@ $contrast-color: #000;
 $accent-color: #F04C23;
 $secondary-accent-color: #FFD200;
 
+::selection {
+    background-color: transparent;
+}
+
 body {
     background-color: $primary-color;
     overflow: hidden;

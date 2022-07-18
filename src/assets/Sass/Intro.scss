@@ -1,0 +1,187 @@
+$primary-color: #f2f1f1;
+$secondary-primary-color: #E2DEDE;
+$contrast-color: #000;
+$accent-color: #F04C23;
+$secondary-accent-color: #FFD200;
+
+/*  TODO 
+    MEDIA-WIDTH FOR IMG
+*/
+.Intro {
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 90vh;
+    padding-top: 5vh;
+    display: flex;
+    & > section {
+        flex: 1;
+        &:first-of-type {
+
+        }
+
+        &:last-of-type {
+            position: relative;
+            & > div:first-of-type {
+                background-color: $primary-color;
+                width: 20vw;
+                height: 40vh;
+                position: absolute;
+                border-radius: 0rem 0.5rem 0.5rem 0rem;
+                left: -2rem;
+                top: 20%;
+                z-index: 1;
+                border-right: solid 0.4rem $secondary-accent-color;
+                display: grid;
+                place-content: center;
+                & > div:first-of-type {
+                    font-size: 3rem;
+                    transform: rotate(-90deg);
+                    font-weight: 800;
+                    font-family: 'Times New Roman', Times, serif;
+                    position: relative;
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        padding: 1px 50%;
+                        bottom: -10vw;
+                        right: 0px;
+                        background-color: $primary-color;
+                    }
+                }
+                & > div:last-of-type {
+                    background-image: url(../image/Tacocat.jpg);
+                    background-size: cover;
+                    position: absolute;
+                    right: -21.5vw;
+                    top: 5vh;
+                    min-width: 15vw;
+                    min-height: 15vw;
+                    z-index: 4;
+                }
+            }
+            & > div:last-of-type{
+                height: 70vh;
+                top: 5vh;
+                width: 40vw;
+                position: absolute;
+                right: (3.3rem);
+                border-radius: 0.5rem 0rem 0rem 0.5rem;
+                background-color: $accent-color;
+                display: grid;
+                place-content: center flex-end;
+                color: $primary-color;
+                border-top: dashed 2px $secondary-primary-color;
+                border-left: dashed 2px $secondary-primary-color;
+                border-bottom: dashed 2px $secondary-primary-color;
+                & > div {
+                    &:last-of-type{
+                        flex: 1;
+                        position: relative;
+                        transform: rotateZ(90deg);
+                        font-size: 1.25rem;
+                        font-weight: 100;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 60%;
+                            left: -11vh;
+                            padding: 1px 5vh;
+                            background-color: $primary-color;
+                        }
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            top: 60%;
+                            right: -11vh;
+                            padding: 1px 5vh;
+                            background-color: $primary-color;
+                        } 
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-height: 900px){
+
+.Intro {
+    & > section {
+        &:last-of-type {
+            & > div:first-of-type {
+                & > div:first-of-type {
+                    font-size: 2.5rem;
+                }
+                & > div:last-of-type {
+                    min-width: 200px;
+                    min-height: 200px;
+                    right: -20vw;
+                    top: 8vh;
+                }
+            }
+        }
+    }
+}
+    
+}
+
+@media screen and (max-height: 800px) {
+    
+.Intro {
+    & > section {
+        &:last-of-type {
+            & > div:first-of-type {
+                & > div:first-of-type {
+                    font-size: 2.5rem;
+                }
+                & > div:last-of-type {
+                    min-width: 80px;
+                    min-height: 80px;
+                    right: -15vw;
+                    top: 15vh;
+                }
+            }
+        }
+    }
+}
+
+}
+
+@media screen and (max-height: 650px) {
+    
+.Intro {
+    & > section {
+        &:last-of-type {
+            & > div:first-of-type {
+                & > div:first-of-type {
+                    font-size: 2rem;
+                }
+                & > div:last-of-type {
+                    min-width: 80px;
+                    min-height: 80px;
+                    right: -15vw;
+                    top: 10vh;
+                }
+            }
+        }
+    }
+}
+
+}
+
+@media screen and (max-height: 500px) {
+    
+.Intro {
+    & > section {
+        &:last-of-type {
+            & > div:first-of-type {
+                & > div:first-of-type {
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+}
+
+}

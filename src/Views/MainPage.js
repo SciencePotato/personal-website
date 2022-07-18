@@ -3,6 +3,7 @@ import Loader from "../components/Loader";
 import SideBar from "../components/SideBar"
 import Intro from "./Intro";
 
+
 // https://yo-star.com/pc/images/wangge_bg.png
 const MainPage = () =>{
 
@@ -10,8 +11,15 @@ const MainPage = () =>{
         console.log("Potato");
     });   
 
+    window.onload = () => {
+        setLoaded(true);       
+        document.querySelector("aside").classList.remove("is-active");
+        document.getElementsByClassName("rightSide")[0].classList.add("close");
+        document.getElementsByClassName("rightSide")[0].classList.remove("open");
+    }
+
     const [loaded, setLoaded] = useState(false);
-    const [pageNum, setPageNum] = useState(0);
+    const [pageNum, setPageNum] = useState(1);
 
     useEffect(() => {
         setLoaded(true);       
@@ -27,7 +35,7 @@ const MainPage = () =>{
                 <section>
                     {
                         pageNum === 1 &&
-                        (<div> 1 </div>)
+                        (<Intro></Intro>)
                     }
 
                     {
@@ -39,7 +47,7 @@ const MainPage = () =>{
                         pageNum === 3 &&
                         (<div> 3 </div>)
                     }
-                    <Intro/>
+                    
                     <button onClick={() => {
                             setLoaded(false);
                             setTimeout(() => {

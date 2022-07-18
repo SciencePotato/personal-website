@@ -23,12 +23,13 @@ const SideBar = (props) => {
                             document.getElementsByClassName("rightSide")[0].classList.add("open");
                             setIsOpen(true);
                         }
-                        
                     }}>
                         ||
                     </div>
                     <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M16 8v-4l8 8-8 8v-4h-16l8-8h8z"/></svg>
+                        <svg onClick={() =>{
+                            props.setPageNumState(props.pageNumVal + 1);
+                        }} xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M16 8v-4l8 8-8 8v-4h-16l8-8h8z"/></svg>
                     </div>
                 </section>
                 <Menu pageNumVal={props.pageNumVal} setPageNumState={props.setPageNumState}/>

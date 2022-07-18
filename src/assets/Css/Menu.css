@@ -28,11 +28,11 @@
   cursor: pointer;
   position: relative;
 }
+.menu > div:first-of-type > div > h1:hover {
+  color: #F04C23;
+}
 .menu > div:first-of-type > div > h1:hover::before {
   padding: 1rem 2px;
-}
-.menu > div:first-of-type > div > h1:hover::after {
-  padding: 2px 3rem;
 }
 .menu > div:first-of-type > div > h1::before {
   content: "";
@@ -50,10 +50,23 @@
   bottom: -0.5rem;
   left: -1rem;
   padding: 2px;
-  background-color: #F04C23;
+  background-color: #000;
 }
 .menu > div:last-of-type {
   min-height: 10vh;
+  display: flex;
+  text-align: center;
+}
+.menu > div:last-of-type > div {
+  flex: 1;
+}
+.menu > div:last-of-type > div > svg {
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all ease-out 0.1s;
+}
+.menu > div:last-of-type > div > svg:hover {
+  fill: #F04C23;
 }
 
 @media screen and (max-height: 500px) {
