@@ -28,7 +28,10 @@ const SideBar = (props) => {
                     </div>
                     <div>
                         <svg onClick={() =>{
-                            props.setPageNumState(props.pageNumVal + 1);
+                            if (props.pageNumVal === 5)
+                                props.setPageNumState(1);
+                            else 
+                                props.setPageNumState(props.pageNumVal + 1);
                         }} xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M16 8v-4l8 8-8 8v-4h-16l8-8h8z"/></svg>
                     </div>
                 </section>

@@ -1,15 +1,23 @@
-import {toast} from 'react-toastify';
-
 const Menu = (props) => {
     return (
         <nav className="menu">
             <div>
                 <div>
-                    <h1> Introduction </h1>
-                    <h1> About Me </h1>
-                    <h1> Projects </h1>
-                    <h1> Updates </h1>
-                    <h1> Contact</h1>
+                    <h1 onClick={() =>{
+                        props.setPageNumState(1);
+                    }}> Introduction </h1>
+                    <h1 onClick={() => {
+                        props.setPageNumState(2);
+                    }}> About Me </h1>
+                    <h1 onClick={() =>{
+                        props.setPageNumState(1);
+                    }}> Projects </h1>
+                    <h1 onClick={() =>{
+                        props.setPageNumState(1);
+                    }}> Updates </h1>
+                    <h1 onClick={() =>{
+                        props.setPageNumState(1);
+                    }}> Contact </h1>
                 </div>
             </div>
             <div>

@@ -16,6 +16,7 @@ const LoaderDiv = (props) => {
         >
         </div>
     )
+
 }
 
 export default LoaderDiv;
