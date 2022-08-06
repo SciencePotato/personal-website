@@ -47,6 +47,16 @@ const MainPage = () =>{
                         pageNum === 3 &&
                         (<div> 3 </div>)
                     }
+
+                    {
+                        pageNum === 4 &&
+                        (<div> 3 </div>)
+                    }
+
+                    {
+                        pageNum === 5 &&
+                        (<div> 3 </div>)
+                    }
                     
                     <button onClick={() => {
                             setLoaded(false);

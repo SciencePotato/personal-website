@@ -10,13 +10,13 @@ const Menu = (props) => {
                         props.setPageNumState(2);
                     }}> About Me </h1>
                     <h1 onClick={() =>{
-                        props.setPageNumState(1);
+                        props.setPageNumState(3);
                     }}> Projects </h1>
                     <h1 onClick={() =>{
-                        props.setPageNumState(1);
+                        props.setPageNumState(4);
                     }}> Updates </h1>
                     <h1 onClick={() =>{
-                        props.setPageNumState(1);
+                        props.setPageNumState(5);
                     }}> Contact </h1>
                 </div>
             </div>
