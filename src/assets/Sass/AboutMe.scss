@@ -6,6 +6,6 @@ $secondary-accent-color: #0076C4;
 $third-accent-color: #FFD200;
 
 .aboutMe {
-    width: 100vw;
+    width: calc(100vw - 3.3rem);
     height: 100vh;
 }

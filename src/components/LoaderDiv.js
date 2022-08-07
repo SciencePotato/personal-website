@@ -10,9 +10,9 @@ const LoaderDiv = (props) => {
                 const Loader = document.getElementsByClassName("loaderDiv")[props.order].parentElement;
                 setTimeout(() =>{
                     Loader.style.display = "none";
-               }, 1000);
+               }, 1500);
             }
-        }, props.delay);}}
+        }, props.delay + 25);}}
         >
         </div>
     )

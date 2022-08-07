@@ -1,0 +1,142 @@
+$primary-color: #f2f1f1;
+$secondary-primary-color: #E2DEDE;
+$contrast-color: #000;
+$accent-color: #DE2F1F;
+$secondary-accent-color: #0076C4;
+$third-accent-color: #FFD200;
+
+.contactMe {
+    display: grid;
+    place-content: center;
+    text-align: center;
+    width: calc(100vw - 3.3rem);
+    & > svg {
+        &:nth-of-type(1) {
+            z-index: 4;
+            position: absolute;
+            bottom: 0px;
+            right: -100%;
+            width: 200%;
+            height: 20%;
+        }
+        &:nth-of-type(2) {
+            z-index: 3;
+            position: absolute;
+            bottom: 0px;
+            height: 36%;
+            right: -80%;
+            width: 200%;
+        }
+        &:nth-of-type(3) {
+            z-index: 2;
+            position: absolute;
+            bottom: 0px;
+            height: 50%;
+            right: -90%;
+            width: 200%;
+        }
+        &:nth-of-type(4) {
+            z-index: 2;
+            position: absolute;
+            left: -10%;
+        }
+        &:last-of-type{
+            position: absolute;
+            transform: scaleX(-1);
+            bottom: -10%;
+        }
+    }
+    & > section {
+        text-align: center;
+        display: grid;
+        place-content: center;
+        height: 100vh;
+        & > h2 {
+            font-size: 7rem;
+            position: relative;
+            margin: 0px;
+            color: $secondary-accent-color;
+            &::after {
+                position: absolute;
+                content: "";
+                padding: 2px 15px;
+                background-color: $secondary-accent-color;
+                bottom: 10%;
+                animation: opacityChange 1.5s infinite;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1700px) {
+.contactMe {
+    & > section {
+        & h2 {
+            font-size: 5rem;
+        }
+    }
+    & > svg{
+        &:nth-of-type(4) {
+            left: -10%;
+        }
+    }
+}
+}
+
+@media screen and (max-width: 1400px) {
+.contactMe {
+    & > section {
+        & h2 {
+            font-size: 3.75rem;
+        }
+    }
+    & > svg{
+        &:nth-of-type(4) {
+            left: -30%;
+        }
+    }
+}
+}
+
+@media screen and (max-width: 800px) {
+.contactMe {
+    & > section {
+        height: 100vh;
+        & h2 {
+            margin-top: 0rem;
+            font-size: 2.25rem;
+            &::after{
+                padding: 2px 10px;
+            }
+        }
+    }
+    & > svg{
+        &:nth-of-type(4) {
+            left: -60%;
+        }
+    }
+}
+}
+
+@keyframes opacityChange {
+    0% {
+        opacity: 0;
+    }
+
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

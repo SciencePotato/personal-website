@@ -18,7 +18,7 @@ Using React and Sass, I am aiming to create a new personalize website. This webs
 `npm start`
 
 ### SASS Watch
-`Sass --watch src/assets/Sass:src/assets/Css
+`Sass --watch src/assets/Sass:src/assets/Css`
 
 ### Deployment (Updates Github Page)
 `npm run deploy`

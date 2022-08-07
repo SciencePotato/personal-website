@@ -29,7 +29,7 @@ const Menu = (props) => {
                     <h1 onClick={() =>{
                         props.setPageNumState(5);
                         closeBar();
-                    }}> Contact </h1>
+                    }}> TheEnd. </h1>
                 </div>
             </div>
             <div>

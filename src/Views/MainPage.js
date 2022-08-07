@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import Loader from "../components/Loader";
 import SideBar from "../components/SideBar"
 import AboutMe from "./AboutMe";
+import Contact from "./Contact";
 import Intro from "./Intro";
 
 
@@ -56,7 +57,7 @@ const MainPage = () =>{
 
                     {
                         pageNum === 5 &&
-                        (<div> 5 </div>)
+                        (<Contact></Contact>)
                     }
                     
                     {/* <button onClick={() => {
