@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.94bf2f22.css",
-    "main.js": "/personal-website/static/js/main.e968cf22.js",
-    "static/media/Tacocat.jpg": "/personal-website/static/media/Tacocat.9bcd1dbb23a2520d5103.jpg",
+    "main.css": "/personal-website/static/css/main.199b6b70.css",
+    "main.js": "/personal-website/static/js/main.5f134ea9.js",
+    "static/media/myPhoto.jpg": "/personal-website/static/media/myPhoto.ef5e1ee734292d8635fa.jpg",
     "index.html": "/personal-website/index.html",
-    "main.94bf2f22.css.map": "/personal-website/static/css/main.94bf2f22.css.map",
-    "main.e968cf22.js.map": "/personal-website/static/js/main.e968cf22.js.map"
+    "main.199b6b70.css.map": "/personal-website/static/css/main.199b6b70.css.map",
+    "main.5f134ea9.js.map": "/personal-website/static/js/main.5f134ea9.js.map"
   },
   "entrypoints": [
-    "static/css/main.94bf2f22.css",
-    "static/js/main.e968cf22.js"
+    "static/css/main.199b6b70.css",
+    "static/js/main.5f134ea9.js"
   ]
 }
