@@ -41,7 +41,7 @@ aside > section > div:nth-of-type(2) > p {
   font-weight: 700;
 }
 aside > section > div:nth-of-type(2):hover {
-  color: #F04C23;
+  color: #DE2F1F;
 }
 aside > section > div:last-of-type {
   flex: 1;
@@ -51,7 +51,7 @@ aside > section > div > svg {
   transition: all ease-in-out 0.1s;
 }
 aside > section > div > svg:hover {
-  fill: #F04C23;
+  fill: #DE2F1F;
 }
 aside .contrastMode {
   transition: all ease-out 0.1s;
@@ -66,7 +66,7 @@ aside .contrastMode:hover {
 
 .close {
   left: 100vw;
-  top: 100vh;
+  top: 0vh;
 }
 
 .open {
@@ -78,8 +78,8 @@ aside .contrastMode:hover {
   transition: all ease-out 0.5s;
   position: absolute;
   width: calc(100vw - 20rem);
-  background-color: #F04C23;
-  height: 100vh;
+  background-color: #DE2F1F;
+  height: 200vh;
 }
 
 /*# sourceMappingURL=SideBar.css.map */

@@ -29,7 +29,7 @@
   position: relative;
 }
 .menu > div:first-of-type > div > h1:hover {
-  color: #F04C23;
+  color: #DE2F1F;
 }
 .menu > div:first-of-type > div > h1:hover::before {
   padding: 1rem 2px;
@@ -41,7 +41,7 @@
   bottom: 0rem;
   left: -1rem;
   padding: 2px;
-  background-color: #F04C23;
+  background-color: #DE2F1F;
 }
 .menu > div:first-of-type > div > h1::after {
   content: "";
@@ -66,7 +66,7 @@
   transition: all ease-out 0.1s;
 }
 .menu > div:last-of-type > div > svg:hover {
-  fill: #F04C23;
+  fill: #DE2F1F;
 }
 
 @media screen and (max-height: 500px) {

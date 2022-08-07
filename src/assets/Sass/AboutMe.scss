@@ -3,14 +3,9 @@ $secondary-primary-color: #E2DEDE;
 $contrast-color: #000;
 $accent-color: #DE2F1F;
 $secondary-accent-color: #0076C4;
+$third-accent-color: #FFD200;
 
-.loader {
-    display: flex;
-    position: absolute;
-    left: 3.3rem;
-    top: 0;
-    z-index: 100002;
-    > div {
-        flex: 1;
-    }
+.aboutMe {
+    width: 100vw;
+    height: 100vh;
 }

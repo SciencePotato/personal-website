@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import Loader from "../components/Loader";
 import SideBar from "../components/SideBar"
+import AboutMe from "./AboutMe";
 import Intro from "./Intro";
 
 
@@ -40,7 +41,7 @@ const MainPage = () =>{
 
                     {
                         pageNum === 2 &&
-                        (<div> 2 </div>)
+                        (<AboutMe></AboutMe>)
                     }
 
                     {
@@ -50,21 +51,21 @@ const MainPage = () =>{
 
                     {
                         pageNum === 4 &&
-                        (<div> 3 </div>)
+                        (<div> 4 </div>)
                     }
 
                     {
                         pageNum === 5 &&
-                        (<div> 3 </div>)
+                        (<div> 5 </div>)
                     }
                     
-                    <button onClick={() => {
+                    {/* <button onClick={() => {
                             setLoaded(false);
                             setTimeout(() => {
                                 setLoaded(true);
                             }, 400);
                         }
-                    }> Testing Btn </button>
+                    }> Testing Btn </button> */}
                 </section>
             </main>
         </>

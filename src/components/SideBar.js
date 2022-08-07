@@ -4,6 +4,20 @@ import Menu from "./Menu";
 const SideBar = (props) => {
     const [IsOpen, setIsOpen] = useState(false);
 
+    const closeBar = () => {
+        document.querySelector("aside").classList.remove("is-active");
+        document.getElementsByClassName("rightSide")[0].classList.add("close");
+        document.getElementsByClassName("rightSide")[0].classList.remove("open");
+        setIsOpen(false);
+    }
+
+    const openBar = () => {
+        document.querySelector("aside").classList.add("is-active");
+        document.getElementsByClassName("rightSide")[0].classList.remove("close");
+        document.getElementsByClassName("rightSide")[0].classList.add("open");
+        setIsOpen(true);
+    }
+
     return (
         <>
             <aside className="">
@@ -13,15 +27,9 @@ const SideBar = (props) => {
                     </div>
                     <div onClick={() =>{
                         if(IsOpen === true) {
-                            document.querySelector("aside").classList.remove("is-active");
-                            document.getElementsByClassName("rightSide")[0].classList.add("close");
-                            document.getElementsByClassName("rightSide")[0].classList.remove("open");
-                            setIsOpen(false);
+                            closeBar();
                         } else {
-                            document.querySelector("aside").classList.add("is-active");
-                            document.getElementsByClassName("rightSide")[0].classList.remove("close");
-                            document.getElementsByClassName("rightSide")[0].classList.add("open");
-                            setIsOpen(true);
+                            openBar();
                         }
                     }}>
                         ||
@@ -35,7 +43,7 @@ const SideBar = (props) => {
                         }} xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M16 8v-4l8 8-8 8v-4h-16l8-8h8z"/></svg>
                     </div>
                 </section>
-                <Menu pageNumVal={props.pageNumVal} setPageNumState={props.setPageNumState}/>
+                <Menu pageNumVal={props.pageNumVal} setPageNumState={props.setPageNumState} setIsOpen={setIsOpen}/>
             </aside>
             
             <aside className="rightSide close">

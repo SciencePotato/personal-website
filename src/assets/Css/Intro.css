@@ -1,133 +1,114 @@
-/*  TODO 
-    MEDIA-WIDTH FOR IMG
-*/
 .Intro {
   position: relative;
   left: 0;
   top: 0;
-  height: 90vh;
-  padding-top: 5vh;
+  height: 100vh;
   display: flex;
 }
 .Intro > section {
   flex: 1;
+  min-height: 100vh;
+}
+.Intro > section:first-of-type {
+  display: grid;
+  place-content: flex-end center;
+  position: relative;
+  min-width: 30rem;
+}
+.Intro > section:first-of-type > img:first-of-type {
+  position: absolute;
+  min-width: 250px;
+  min-height: 250px;
+  z-index: 0;
+  width: 25%;
+  height: 25%;
+  top: 15%;
+  left: 25%;
+}
+.Intro > section:first-of-type > img:nth-of-type(2) {
+  position: absolute;
+  min-width: 250px;
+  min-height: 250px;
+  z-index: 0;
+  width: 25%;
+  height: 25%;
+  bottom: 15%;
+  right: 15%;
+}
+.Intro > section:first-of-type > div {
+  margin-bottom: 40vh;
+  text-align: center;
+  position: relative;
+}
+.Intro > section:first-of-type > div > h1 {
+  font-size: 5rem;
+  margin: 0px;
+  color: #DE2F1F;
+}
+.Intro > section:first-of-type > div > h2 {
+  margin: 0px;
+  color: #0076C4;
 }
 .Intro > section:last-of-type {
   position: relative;
 }
-.Intro > section:last-of-type > div:first-of-type {
-  background-color: #f2f1f1;
-  width: 20vw;
-  height: 40vh;
-  position: absolute;
-  border-radius: 0rem 0.5rem 0.5rem 0rem;
-  left: -2rem;
-  top: 20%;
-  z-index: 1;
-  border-right: solid 0.4rem #FFD200;
-  display: grid;
-  place-content: center;
-}
-.Intro > section:last-of-type > div:first-of-type > div:first-of-type {
-  font-size: 3rem;
-  transform: rotate(-90deg);
-  font-weight: 800;
-  font-family: "Times New Roman", Times, serif;
-  position: relative;
-}
-.Intro > section:last-of-type > div:first-of-type > div:first-of-type::after {
-  content: "";
-  position: absolute;
-  padding: 1px 50%;
-  bottom: -10vw;
-  right: 0px;
-  background-color: #f2f1f1;
-}
-.Intro > section:last-of-type > div:first-of-type > div:last-of-type {
-  background-image: url(../image/Tacocat.jpg);
-  background-size: cover;
-  position: absolute;
-  right: -21.5vw;
-  top: 5vh;
-  min-width: 15vw;
-  min-height: 15vw;
+.Intro > section:last-of-type > svg:nth-of-type(1) {
   z-index: 4;
-}
-.Intro > section:last-of-type > div:last-of-type {
-  height: 70vh;
-  top: 5vh;
-  width: 40vw;
   position: absolute;
-  right: 3.3rem;
-  border-radius: 0.5rem 0rem 0rem 0.5rem;
-  background-color: #F04C23;
-  display: grid;
-  place-content: center flex-end;
-  color: #f2f1f1;
-  border-top: dashed 2px #E2DEDE;
-  border-left: dashed 2px #E2DEDE;
-  border-bottom: dashed 2px #E2DEDE;
+  bottom: 0px;
+  right: -500px;
+  width: 200%;
+  height: 20%;
 }
-.Intro > section:last-of-type > div:last-of-type > div:last-of-type {
-  flex: 1;
-  position: relative;
-  transform: rotateZ(90deg);
-  font-size: 1.25rem;
-  font-weight: 100;
-}
-.Intro > section:last-of-type > div:last-of-type > div:last-of-type::before {
-  content: "";
+.Intro > section:last-of-type > svg:nth-of-type(2) {
+  z-index: 3;
   position: absolute;
-  top: 60%;
-  left: -11vh;
-  padding: 1px 5vh;
-  background-color: #f2f1f1;
+  bottom: 0px;
+  height: 30%;
+  right: -300px;
+  width: 200%;
 }
-.Intro > section:last-of-type > div:last-of-type > div:last-of-type::after {
-  content: "";
+.Intro > section:last-of-type > svg:nth-of-type(3) {
+  z-index: 2;
   position: absolute;
-  top: 60%;
-  right: -11vh;
-  padding: 1px 5vh;
-  background-color: #f2f1f1;
+  bottom: 0px;
+  height: 20%;
+  right: -400px;
+  width: 200%;
+}
+.Intro > section:last-of-type > svg:nth-of-type(4) {
+  z-index: 1;
+  position: absolute;
+  bottom: 0px;
+  height: 100%;
+  right: -500px;
+  width: 150%;
+  transform: scaleX(-1);
+}
+.Intro > section:last-of-type > svg:nth-of-type(5) {
+  z-index: 0;
+  position: absolute;
+  bottom: -23%;
+  height: 100%;
+  right: -300px;
+  width: 150%;
+  transform: rotateZ(-30deg);
+}
+.Intro > section:last-of-type > svg:last-of-type {
+  fill: #FFD200;
 }
 
-@media screen and (max-height: 900px) {
-  .Intro > section:last-of-type > div:first-of-type > div:first-of-type {
-    font-size: 2.5rem;
+@media screen and (max-width: 800px) {
+  .Intro > section {
+    place-content: center;
   }
-  .Intro > section:last-of-type > div:first-of-type > div:last-of-type {
-    min-width: 200px;
-    min-height: 200px;
-    right: -20vw;
-    top: 8vh;
+  .Intro > section:first-of-type > div > h1 {
+    font-size: 3rem;
   }
 }
-@media screen and (max-height: 800px) {
-  .Intro > section:last-of-type > div:first-of-type > div:first-of-type {
-    font-size: 2.5rem;
-  }
-  .Intro > section:last-of-type > div:first-of-type > div:last-of-type {
-    min-width: 80px;
-    min-height: 80px;
-    right: -15vw;
-    top: 15vh;
-  }
-}
-@media screen and (max-height: 650px) {
-  .Intro > section:last-of-type > div:first-of-type > div:first-of-type {
-    font-size: 2rem;
-  }
-  .Intro > section:last-of-type > div:first-of-type > div:last-of-type {
-    min-width: 80px;
-    min-height: 80px;
-    right: -15vw;
-    top: 10vh;
-  }
-}
-@media screen and (max-height: 500px) {
-  .Intro > section:last-of-type > div:first-of-type > div:first-of-type {
-    font-size: 1.25rem;
+@media screen and (max-width: 600px) {
+  .Intro > section:first-of-type > div > h1 {
+    font-size: 3rem;
   }
 }
 

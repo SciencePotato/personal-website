@@ -1,8 +1,8 @@
 $primary-color: #f2f1f1;
 $secondary-primary-color: #E2DEDE;
 $contrast-color: #000;
-$accent-color: #F04C23;
-$secondary-accent-color: #FFD200;
+$accent-color: #DE2F1F;
+$secondary-accent-color: #0076C4;
 
 aside {
     background-color: $secondary-primary-color;
@@ -74,7 +74,7 @@ aside {
 
 .close {
     left: 100vw;
-    top: 100vh;
+    top: 0vh;
 }
 
 .open {
@@ -87,5 +87,5 @@ aside {
     position: absolute;
     width: calc(100vw - 20rem);
     background-color: $accent-color;
-    height: 100vh;
+    height: 200vh;
 }
