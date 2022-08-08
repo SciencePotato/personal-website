@@ -14,6 +14,10 @@ const MainPage = () =>{
     });   
 
     window.onload = () => {
+        /* Mobile Check */ 
+        
+
+
         setLoaded(true);       
         document.querySelector("aside").classList.remove("is-active");
         document.getElementsByClassName("rightSide")[0].classList.add("close");

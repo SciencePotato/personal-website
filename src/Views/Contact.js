@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import portrait from "../assets/image/myPhoto.jpg"
 const Contact = (props) => {
     const titleText = "Thank you for Visiting!";
     const speed = 70;
@@ -39,7 +38,6 @@ const Contact = (props) => {
                     <path fill="#004879" fill-opacity="1" d="M0,288L1440,0L1440,320L0,320Z"></path>
                 </svg>
                 <section>
-                    {/* <img src={portrait} alt="" /> */}
                     <h2 id="typeWriter"> 
                     </h2>
                 </section>

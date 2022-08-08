@@ -39,6 +39,7 @@
   margin-bottom: 40vh;
   text-align: center;
   position: relative;
+  background-color: #f2f1f1;
 }
 .Intro > section:first-of-type > div > h1 {
   font-size: 5rem;
