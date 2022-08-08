@@ -1,10 +1,13 @@
-.aboutMe {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizelegibility;
+.nerd {
+  text-align: center;
+  font-size: 4rem;
+  margin: 0px;
+  margin-top: 2vh;
   width: calc(100vw - 3.3rem);
-  height: 100vh;
-  position: relative;
+}
+.nerd > span {
+  color: #DE2F1F;
+  font-family: cursive;
 }
 
 .flex-parent {
@@ -12,7 +15,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: calc(100vw - 3.3rem);
   height: 100%;
 }
 
@@ -25,7 +28,7 @@
   max-width: 1000px;
   position: relative;
   z-index: 0;
-  transition: all ease-out 0.2s;
+  transition: all ease-out 0.5s;
 }
 
 .input {
@@ -34,7 +37,8 @@
   background-color: #DE2F1F;
   position: relative;
   border-radius: 50%;
-  transition: all ease-out 0.2s;
+  transition: all ease-out 0.5s;
+  margin-top: 10vh;
 }
 .input:hover {
   cursor: pointer;
@@ -47,33 +51,31 @@
   top: 50%;
   transform: translateY(-50%);
   background-color: #DE2F1F;
-  width: 4vw;
+  width: 13.3333333333vw;
   height: 5px;
-  max-width: 50px;
+  max-width: 166.6666666667px;
 }
 .input::before {
-  left: calc(-4vw + 12.5px);
+  left: calc(-13.3333333333vw + 12.5px);
 }
 .input::after {
-  right: calc(-4vw + 12.5px);
+  right: calc(-13.3333333333vw + 12.5px);
 }
-.input .active {
+.input.active {
   background-color: #DE2F1F;
 }
-.input .active::before {
+.input.active::before {
   background-color: #DE2F1F;
 }
-.input .active::after {
+.input.active::after {
   background-color: #E2DEDE;
 }
-.input .active > span {
+.input.active span {
   font-weight: 700;
 }
-.input .active > span::before {
+.input.active span::before {
   font-size: 13px;
-}
-.input .active > span::after {
-  font-size: 15px;
+  color: #0076C4;
 }
 .input.active ~ .input, .input.active ~ .input::before, .input.active ~ .input::after {
   background-color: #E2DEDE;
@@ -114,23 +116,26 @@
   margin-top: 100px;
   max-width: 1000px;
 }
-.description-flex-container > p {
+.description-flex-container > div, .description-flex-container > p {
   margin-top: 0;
   display: none;
 }
-.description-flex-container > p.active {
+.description-flex-container > div.active, .description-flex-container > p.active {
   display: block;
 }
 
-@media (min-width: 1250px) {
+@media screen and (min-width: 1250px) {
   .input::before {
-    left: -37.5px;
+    left: -154.1666666667px;
   }
   .input::after {
-    right: -37.5px;
+    right: -154.1666666667px;
   }
 }
-@media (max-width: 850px) {
+@media screen and (max-width: 850px) {
+  .nerd {
+    font-size: 2rem;
+  }
   .input {
     width: 17px;
     height: 17px;
@@ -139,10 +144,52 @@
     height: 3px;
   }
   .input::before {
-    left: calc(-4vw + 8.5px);
+    left: calc(-13.3333333333vw + 8.5px);
   }
   .input::after {
-    right: calc(-4vw + 8.5px);
+    right: calc(-13.3333333333vw + 8.5px);
+  }
+}
+@media screen and (max-width: 600px) {
+  .flex-parent {
+    justify-content: initial;
+  }
+  .input-flex-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin: 3vh 0px;
+    margin-bottom: 0px;
+  }
+  .input {
+    width: 60px;
+    height: 60px;
+    margin: 0 10px 50px;
+    background-color: #DE2F1F;
+  }
+  .input::before, .input::after {
+    content: none;
+  }
+  .input > span {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .input > span::before {
+    top: calc(100% + 5px);
+    transform: translateX(-50%);
+    text-indent: 0;
+    text-align: center;
+  }
+  .input > span::after {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #ECF0F1;
+  }
+  .description-flex-container {
+    margin-top: 0px;
+    text-align: center;
   }
 }
 

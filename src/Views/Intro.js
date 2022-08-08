@@ -40,7 +40,7 @@ const Intro = (props) => {
                     <path d="M194.703 -1.27119L590.622 1385.44L6.51458 1388.03L4.21288e-05 -0.40679L194.703 -1.27119Z" fill="#0076C4"/>
                 </svg>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                    <path fill="#004879" fill-opacity="1" d="M0,288L1440,0L1440,320L0,320Z"></path>
+                    <path fill="#004879" opacity="1" d="M0,288L1440,0L1440,320L0,320Z"></path>
                 </svg>
                 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="50" cy="50" r="50"/>

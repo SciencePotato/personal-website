@@ -8,6 +8,7 @@ import SideBarCss from "./assets/Css/SideBar.css";
 import MenuCss from "./assets/Css/Menu.css";
 import AboutMeCss from "./assets/Css/AboutMe.css"
 import ContactCss from "./assets/Css/Contact.css"
+import ProjectsCss from "./assets/Css/Projects.css"
 
 const App = () => {
   return (

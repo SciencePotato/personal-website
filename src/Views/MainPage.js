@@ -4,6 +4,7 @@ import SideBar from "../components/SideBar"
 import AboutMe from "./AboutMe";
 import Contact from "./Contact";
 import Intro from "./Intro";
+import Projects from "./Projects";
 
 
 // https://yo-star.com/pc/images/wangge_bg.png
@@ -51,7 +52,7 @@ const MainPage = () =>{
 
                     {
                         pageNum === 3 &&
-                        (<div> 3 </div>)
+                        (<div> <Projects></Projects></div>)
                     }
 
                     {
