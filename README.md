@@ -22,3 +22,5 @@ Using React and Sass, I am aiming to create a new personalize website. This webs
 
 ### Deployment (Updates Github Page)
 `npm run deploy`
+
+### Credits

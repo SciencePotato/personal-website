@@ -15,22 +15,41 @@
   align-items: center !important;
 }
 .updates > section:first-of-type > div {
+  position: relative;
   margin-left: 3vw;
+}
+.updates > section:first-of-type > div > img {
+  position: absolute;
+  height: max(15vw, 10rem);
+  width: max(15vw, 10rem);
+  left: -5vw;
+  top: -2.5vw;
 }
 .updates > section:first-of-type > div > h1 {
   margin-left: 1vw;
-  letter-spacing: 2.5px;
+  letter-spacing: -5px;
   margin: 0px;
   font-size: 4rem;
 }
 .updates > section:first-of-type > div > h2 {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   margin: 0px;
   margin-left: 3vw;
+  position: relative;
+  overflow-y: hidden;
+  color: #0076C4;
+}
+.updates > section:first-of-type > div > h2::after {
+  content: "";
+  position: absolute;
+  padding: 2px 50px;
+  background-color: #DE2F1F;
+  bottom: 0px;
+  left: -15px;
 }
 .updates > section:nth-of-type(2) {
   flex: 3;
-  background-color: #000;
+  display: flex;
 }
 .updateWrapper {
   position: relative;

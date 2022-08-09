@@ -122,7 +122,7 @@
   display: none;
 }
 .description-flex-container > div > h2, .description-flex-container > p > h2 {
-  margin-top: 0px;
+  margin: 0px;
 }
 .description-flex-container > div.active, .description-flex-container > p.active {
   display: block;

@@ -19,23 +19,42 @@ $third-accent-color: #FFD200;
             min-width: 30rem;
             align-items: center !important;
             & > div {
+                position: relative;
                 margin-left: 3vw;
+                & > img {
+                    position: absolute;
+                    height: Max(15vw, 10rem);
+                    width: Max(15vw, 10rem);
+                    left: -5vw;
+                    top: -2.5vw;
+                }
                 & > h1 {
                     margin-left: 1vw;
-                    letter-spacing: 2.5px;
+                    letter-spacing: -5px;
                     margin: 0px;
                     font-size: 4rem;
                 }
                 & > h2 {
-                    font-size: 1.4rem;
+                    font-size: 1.8rem;
                     margin: 0px;
                     margin-left: 3vw;
+                    position: relative;
+                    overflow-y: hidden;
+                    color: $secondary-accent-color;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        padding: 2px 50px;
+                        background-color: $accent-color;
+                        bottom: 0px;
+                        left: -15px;
+                    }
                 }
             }
         }
         &:nth-of-type(2){
             flex: 3;
-            background-color: #000;
+            display: flex;
         }
         &:last-of-type {
         }
