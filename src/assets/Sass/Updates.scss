@@ -1,0 +1,62 @@
+$primary-color: #f2f1f1;
+$secondary-primary-color: #E2DEDE;
+$contrast-color: #000;
+$accent-color: #DE2F1F;
+$secondary-accent-color: #0076C4;
+$third-accent-color: #FFD200;
+
+.updates {
+    width: calc(100vw - 3.3rem);
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    & > section {
+        position: relative;
+        height: 100vh;
+        &:first-of-type {
+            flex: 1;
+            display: flex;
+            min-width: 30rem;
+            align-items: center !important;
+            & > div {
+                margin-left: 3vw;
+                & > h1 {
+                    margin-left: 1vw;
+                    letter-spacing: 2.5px;
+                    margin: 0px;
+                    font-size: 4rem;
+                }
+                & > h2 {
+                    font-size: 1.4rem;
+                    margin: 0px;
+                    margin-left: 3vw;
+                }
+            }
+        }
+        &:nth-of-type(2){
+            flex: 3;
+            background-color: #000;
+        }
+        &:last-of-type {
+        }
+    }
+}
+
+.updateWrapper {
+    position: relative;
+    display: flex;
+    width: calc(200vw - 3.3rem);
+}
+
+.updateRight {
+    width: calc(100vw - 3.3rem);
+    height: 100vh;
+    background-color: #0076C4;
+    // margin-left: calc((100vw - 3.3rem) * -1);
+
+    z-index: 4;
+}
+
+@media screen and (max-width: 900px) {
+    
+}

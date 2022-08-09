@@ -1,3 +1,48 @@
+.updates {
+  width: calc(100vw - 3.3rem);
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.updates > section {
+  position: relative;
+  height: 100vh;
+}
+.updates > section:first-of-type {
+  flex: 1;
+  display: flex;
+  min-width: 30rem;
+  align-items: center !important;
+}
+.updates > section:first-of-type > div {
+  margin-left: 3vw;
+}
+.updates > section:first-of-type > div > h1 {
+  margin-left: 1vw;
+  letter-spacing: 2.5px;
+  margin: 0px;
+  font-size: 4rem;
+}
+.updates > section:first-of-type > div > h2 {
+  font-size: 1.4rem;
+  margin: 0px;
+  margin-left: 3vw;
+}
+.updates > section:nth-of-type(2) {
+  flex: 3;
+  background-color: #000;
+}
+.updateWrapper {
+  position: relative;
+  display: flex;
+  width: calc(200vw - 3.3rem);
+}
 
+.updateRight {
+  width: calc(100vw - 3.3rem);
+  height: 100vh;
+  background-color: #0076C4;
+  z-index: 4;
+}
 
 /*# sourceMappingURL=Updates.css.map */

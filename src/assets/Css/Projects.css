@@ -60,7 +60,7 @@
   height: 100%;
   display: flex;
   max-width: max(400px, 70vw);
-  max-height: max(550px, 70vh);
+  max-height: max(550px, 80vh);
   overflow: hidden;
   position: relative;
   z-index: 10;

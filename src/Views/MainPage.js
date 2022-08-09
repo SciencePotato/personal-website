@@ -5,6 +5,7 @@ import AboutMe from "./AboutMe";
 import Contact from "./Contact";
 import Intro from "./Intro";
 import Projects from "./Projects";
+import Updates from "./Updates";
 
 
 // https://yo-star.com/pc/images/wangge_bg.png
@@ -57,7 +58,7 @@ const MainPage = () =>{
 
                     {
                         pageNum === 4 &&
-                        (<div> 4 </div>)
+                        (<div> <Updates></Updates> </div>)
                     }
 
                     {

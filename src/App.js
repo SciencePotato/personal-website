@@ -9,6 +9,7 @@ import MenuCss from "./assets/Css/Menu.css";
 import AboutMeCss from "./assets/Css/AboutMe.css"
 import ContactCss from "./assets/Css/Contact.css"
 import ProjectsCss from "./assets/Css/Projects.css"
+import UpdatesCss from "./assets/Css/Updates.css"
 
 const App = () => {
   return (
