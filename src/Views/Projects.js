@@ -1,9 +1,50 @@
 import { useEffect } from "react";
 
+let items;
+let total;
+let current;
+
+const setSlide = (prev, next) => {
+    let slide = current;
+    if (next > total - 1) {
+        slide = 0;
+        current = 0;
+    } 
+    
+    if (next < 0) {
+        slide = total - 1;
+        current = total - 1;
+    }
+
+    items[prev].classList.remove("active2");
+    items[slide].classList.add("active2");
+
+    setTimeout(() => {
+        
+    }, 800);
+}
+
 const Projects = (props) => {
     useEffect(() => {
-        let items = document.querySelectorAll(".carousel-item");
+        items = document.querySelectorAll(".carousel-item");
         items[0].classList.add("active2");
+
+        total = items.length;
+        current = 0;
+        document.getElementById("moveRight").addEventListener("click", () => {
+            let next = current;
+            current = current + 1;
+            setSlide(next, current);
+            console.log("right");
+        })
+
+        document.getElementById("moveLeft").addEventListener("click", () => {
+            let prev = current;
+            current = current - 1;
+            setSlide(prev, current);
+            console.log("left");
+        })
+
     }, [])
     return (
         <>
@@ -97,7 +138,6 @@ const Projects = (props) => {
             
             </div>
         </section>
-        
         </>
     );
 }

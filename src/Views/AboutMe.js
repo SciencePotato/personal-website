@@ -31,13 +31,13 @@ const AboutMe = (props) => {
             <h1 className="nerd"> Who is this <span> Nerd</span>?</h1>
             <div className="flex-parent">
                 <div className="input-flex-container">
-                    <div id="time1" className="input">
+                    <div id="time1" className="input active">
                         <span data-year="" data-info="History"></span>
                     </div>
                     <div id="time2" className="input">
                         <span data-year="" data-info="Education"></span>
                     </div>
-                    <div id="time3" className="input active">
+                    <div id="time3" className="input">
                         <span data-year="" data-info="Experience"></span>
                     </div>
                     <div id="time4" className="input">
@@ -49,12 +49,12 @@ const AboutMe = (props) => {
 
                 </div>
                 <div className="description-flex-container">
-                    <div>
+                    <div className="active">
                         <h2> It's me Stewie</h2>
                         <p> Potato science</p>
                     </div>
                     <p>Because every kid should get to be Tarzan for a day.</p>
-                    <p className="active">And the world rejoiced.</p>
+                    <p>And the world rejoiced.</p>
                     <p>Because building roads is inconvenient.</p>
                     <p>Ain’t nobody got time to rake.</p>
                 </div>
