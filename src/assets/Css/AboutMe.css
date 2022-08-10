@@ -120,6 +120,7 @@
 .description-flex-container > div, .description-flex-container > p {
   margin-top: 0;
   display: none;
+  margin-bottom: 0px;
 }
 .description-flex-container > div > h2, .description-flex-container > p > h2 {
   margin: 0px;
@@ -128,12 +129,94 @@
   display: block;
 }
 
+.myHistory {
+  position: relative;
+}
+.myHistory > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 20vh;
+}
+.myHistory > div > img {
+  flex: 1;
+  width: 50px;
+}
+
+.myEducation {
+  position: relative;
+}
+.myEducation > div {
+  display: flex;
+  overflow: hidden;
+}
+.myEducation > div:first-of-type > img {
+  flex: 1;
+  object-fit: fill;
+  min-width: 100px;
+  min-height: 100px;
+  margin-left: 3rem;
+}
+.myEducation > div:first-of-type > p {
+  flex: 5;
+  min-width: 25rem;
+}
+.myEducation > div:last-of-type {
+  margin-top: 5vh;
+}
+.myEducation > div:last-of-type > img {
+  flex: 1;
+  object-fit: contain;
+  min-height: 100px;
+  min-width: 200px;
+  margin-right: 3rem;
+}
+.myEducation > div:last-of-type > p {
+  flex: 5;
+  min-width: 25rem;
+}
+
+.myExperience > div {
+  display: grid;
+  place-items: flex-start center;
+}
+.myExperience > div > div {
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: auto;
+}
+.myExperience > div > div > img {
+  flex: 1;
+  min-width: 125px;
+  max-width: 125px;
+  object-fit: cover;
+}
+
+.blue {
+  color: #0076C4;
+}
+
+.red {
+  color: #DE2F1F;
+}
+
 @media screen and (min-width: 1250px) {
   .input::before {
     left: -154.1666666667px;
   }
   .input::after {
     right: -154.1666666667px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .myEducation > div > img {
+    display: none;
+  }
+  .myExperience > div > div > img {
+    margin: auto;
   }
 }
 @media screen and (max-width: 850px) {

@@ -1,3 +1,4 @@
+import 'animate.css';
 import React from "react";
 import MainPage from "./Views/MainPage"; 
 import IntroCss from "./assets/Css/Intro.css"
