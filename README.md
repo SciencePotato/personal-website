@@ -24,3 +24,13 @@ Using React and Sass, I am aiming to create a new personalize website. This webs
 `npm run deploy`
 
 ### Credits
+Website Inspiration
+[Yostar](https://yo-star.com/pc/index.html)
+
+Projects Inspiration and Code
+[FlexBox Exercise](https://codepen.io/veronicadev/pen/yjgjvL)
+- [veronicadev](https://codepen.io/veronicadev)
+
+About Me Inspiration and Code
+[Responsive Timeline](https://codepen.io/celiberion/pen/VwexbVr)
+- [celiberion](https://codepen.io/celiberion)
