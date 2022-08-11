@@ -222,6 +222,55 @@ $inactive: $secondary-primary-color;
 	}
 }
 
+.myHobby {
+	& > div {
+		display: grid;
+		place-items: center;
+		& > div {
+			&:first-of-type{
+				content: "";
+				padding: 3vh 20vw;
+				border: solid 1px $secondary-accent-color;
+				margin: 5vh 0rem;
+				border-radius: 0.25rem;
+				position: relative;
+				&::after {
+					content: "";
+					left: 0.1vw;
+					top: 0.25vh;
+					position: absolute;
+					padding: calc(2.8vh) 18vw;
+					background-color: $accent-color;
+					border-radius: 0.25rem 0rem 0rem 0.25rem;
+				}
+			}
+			&:nth-of-type(2){
+				font-size: 3rem;
+			}
+			&:last-of-type{
+				font-size: 1.25rem;
+			}
+		}
+	}
+}
+
+.myFuture {
+	& > h1 {
+		font-size: 4rem;
+		color: $secondary-accent-color;
+		margin: 0px;
+		text-align: center;
+	}
+	& > h2 {
+		&:last-of-type{
+			color: $accent-color;
+			margin: 0px;
+			text-align: center;
+			margin-top: 5rem;
+		}
+	}
+}
+
 .blue {
 	color: $secondary-accent-color;
 }
@@ -253,6 +302,16 @@ $inactive: $secondary-primary-color;
 			& > div {
 				& > img {
 					margin: auto;
+				}
+			}
+		}
+	}
+
+	.myHobby {
+		& > div {
+			& > div{
+				&:nth-of-type(2) {
+					font-size: 2.5rem;
 				}
 			}
 		}

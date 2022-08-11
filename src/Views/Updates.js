@@ -29,9 +29,9 @@ const Updates = (props) => {
 
                                 </div>
                             </div>
-                            <div>
+                            <div className="updateSelector">
                                 {/* Selector */}
-                                <button> 1</button>
+                                <button className="activeButton"> 1</button>
                                 <button> 2</button>
                                 <button> 3</button>
                                 <button> 4</button>

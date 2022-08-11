@@ -195,6 +195,47 @@
   object-fit: cover;
 }
 
+.myHobby > div {
+  display: grid;
+  place-items: center;
+}
+.myHobby > div > div:first-of-type {
+  content: "";
+  padding: 3vh 20vw;
+  border: solid 1px #0076C4;
+  margin: 5vh 0rem;
+  border-radius: 0.25rem;
+  position: relative;
+}
+.myHobby > div > div:first-of-type::after {
+  content: "";
+  left: 0.1vw;
+  top: 0.25vh;
+  position: absolute;
+  padding: 2.8vh 18vw;
+  background-color: #DE2F1F;
+  border-radius: 0.25rem 0rem 0rem 0.25rem;
+}
+.myHobby > div > div:nth-of-type(2) {
+  font-size: 3rem;
+}
+.myHobby > div > div:last-of-type {
+  font-size: 1.25rem;
+}
+
+.myFuture > h1 {
+  font-size: 4rem;
+  color: #0076C4;
+  margin: 0px;
+  text-align: center;
+}
+.myFuture > h2:last-of-type {
+  color: #DE2F1F;
+  margin: 0px;
+  text-align: center;
+  margin-top: 5rem;
+}
+
 .blue {
   color: #0076C4;
 }
@@ -217,6 +258,9 @@
   }
   .myExperience > div > div > img {
     margin: auto;
+  }
+  .myHobby > div > div:nth-of-type(2) {
+    font-size: 2.5rem;
   }
 }
 @media screen and (max-width: 850px) {

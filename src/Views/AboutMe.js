@@ -129,18 +129,33 @@ const AboutMe = (props) => {
 
                     {/* Hobbies */}
                     <div className="myHobby">
-                        <h2> <span className='blue'> Downtime.exe</span>  <span className='red'> NOT </span>found.</h2>
+                        <h2 className='animate__animated animate__zoomIn animate__fast'> <span className='blue'> Downtime.exe</span>  <span className='red'> NOT </span>found.</h2>
                         <div>
-                            <p>As much as I want to say, "my hobby is coding," that is not entirely true.</p>
+                            <p className='animate__animated animate__lightSpeedInRight'>
+                                As much as I want to say, "my hobby is coding," that is not entirely true. In what is left of my free time, I will often play
+                                video games with friends as a method of relieve. I am, or at least I believe, a creative person, I love to <span className='blue'><b> take photos</b></span>, <span className='blue'><b> play instruments</b></span>, and 
+                                <span className='blue'><b> draw digitally</b></span>. 
+                            </p>
+                            <div className='animate__animated animate__fadeIn animate__delay-1s'>
+
+                            </div>
+                            <div className='red animate__animated animate__fadeIn animate__delay-1s'> <b> Loading Passion ...</b></div>
+                            <div className='animate__animated animate__fadeIn animate__delay-2s'> (Don't worry, nothing is loading :c) </div>
                         </div>
                     </div>
 
                     {/* Future plans */}
-                    <div className="myPlans">
-                        <h2> My Plans </h2>
-                        <p>
-
-                        </p>
+                    <div className="myFuture">
+                        <h2 className='animate__animated animate__zoomIn animate__fast'> <span className='blue'> Future. </span> </h2>
+                        <div className='animate__animated animate__zoomIn'>
+                            <p>
+                                <b className='red'> So</b> what am I going to do in the future? Well, <b className='red'>truthfully </b>, I have no idea! There's so much specific branch of computer science to explore;
+                                I want to try most of them before I graduate (2025). Before then, I'll have to do my best to create more <b className='red'> projects</b> that I am proud of and join more <b className='red'>Hackathons</b> to learn 
+                                from other people.
+                            </p>
+                        </div>
+                        <h2 className='animate__animated animate__zoomIn animate__delay-1s'> Thats all for now.</h2>
+                        <h1 className='animate__animated animate__zoomIn animate__delay-1s'>Thank you</h1>
                     </div>
 
                 </div>
