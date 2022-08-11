@@ -78,6 +78,7 @@ const Projects = (props) => {
                     </svg>    
                 </span>
             </div>
+            {/* Precaution */}
             <div className="carousel-item carousel-item--1">
                 <div className="carousel-item__image"></div>
                 <div className="carousel-item__info">
@@ -89,6 +90,8 @@ const Projects = (props) => {
                     </div>
                 </div>
             </div>
+
+            {/* Eventful */}
             <div className="carousel-item carousel-item--2">
                 <div className="carousel-item__image"></div>
                 <div className="carousel-item__info">
@@ -100,7 +103,9 @@ const Projects = (props) => {
                     </div>
                 </div>
             </div>
-                <div className="carousel-item carousel-item--3">
+
+            {/* Capital Fun */}
+            <div className="carousel-item carousel-item--3">
                 <div className="carousel-item__image"></div>
                 <div className="carousel-item__info">
                 <div className="carousel-item__container">
@@ -112,6 +117,7 @@ const Projects = (props) => {
                 </div>
             </div>
             
+            {/* TBA */}
             <div className="carousel-item carousel-item--4">
                 <div className="carousel-item__image"></div>
                 <div className="carousel-item__info">
@@ -120,18 +126,6 @@ const Projects = (props) => {
                 <h1 className="carousel-item__title">The beach </h1>
                 <p className="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
                 <a className="carousel-item__btn">Explore the beach</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div className="carousel-item carousel-item--5">
-                <div className="carousel-item__image"></div>
-                <div className="carousel-item__info">
-                <div className="carousel-item__container">
-                <h2 className="carousel-item__subtitle">The white building </h2>
-                <h1 className="carousel-item__title">White building</h1>
-                <p className="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-                <a className="carousel-item__btn">Read the article</a>
                     </div>
                 </div>
             </div>

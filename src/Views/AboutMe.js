@@ -94,9 +94,9 @@ const AboutMe = (props) => {
 
                     {/* Experience */}
                     <div className="myExperience">
-                        <h2 className='animate__animated animate__zoomIn animate_fast'> Lv. <b className='red'>1</b> <span className='blue'>(Rookie Trainer)</span></h2>
+                        <h2 className='animate__animated animate__zoomIn animate__fast'> Lv. <b className='red'>1</b> <span className='blue'>(Rookie Trainer)</span></h2>
                         <div>
-                            <p>
+                            <p className='animate__animated animate__slideInUp'>
                                While I don't have much professional experience, I do dabble in random technologies hoping to learn more from it. 
                                The Image below represents the technology that I am familiar with, and confident in. From left to right it's
                                <b className='blue'> React </b>, 
@@ -106,7 +106,7 @@ const AboutMe = (props) => {
                                <b className='blue'> SQL </b>, 
                                <b className='blue'> Sass </b> 
                             </p>
-                            <div>
+                            <div className='animate__animated animate__fadeIn animate__fast'>
                                 {/* Images */}
                                 <img src={react} alt="" />
                                 <img src={githubImg} alt="" />
@@ -115,19 +115,24 @@ const AboutMe = (props) => {
                                 <img src={sql} alt="" />
                                 <img src={sass} alt="" />
                             </div>
-                            <p>
-                                Over my short career, if there was any, I learned many language, such as 
-                                <b className='blue'></b>
+                            <p className='animate__animated animate__slideInUp'>
+                                Over my short career, if there was any, I learned many programming languages: 
+                                <b className='blue'> JavaScript </b>,
+                                <b className='blue'> Java </b>,
+                                <b className='blue'> TypeScript </b>,
+                                <b className='blue'> Python </b>,
+                                <b className='blue'> SQL </b>,
+                                <b className='blue'> Kotlin</b>.
                             </p>
                         </div>
                     </div>
 
                     {/* Hobbies */}
                     <div className="myHobby">
-                        <h2> My Hobby </h2>
-                        <p>
-
-                        </p>
+                        <h2> <span className='blue'> Downtime.exe</span>  <span className='red'> NOT </span>found.</h2>
+                        <div>
+                            <p>As much as I want to say, "my hobby is coding," that is not entirely true.</p>
+                        </div>
                     </div>
 
                     {/* Future plans */}

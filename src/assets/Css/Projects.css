@@ -81,7 +81,7 @@
   -webkit-flex-shrink: 0;
   position: absolute;
   z-index: 0;
-  transition: 0.6s all linear;
+  transition: 0.4s all linear;
 }
 
 .carousel-item__info {
@@ -113,7 +113,7 @@
   background-size: cover;
   position: relative;
   transform: translateX(100%);
-  transition: 0.6s all ease-in-out;
+  transition: 0.4s all ease-in-out;
 }
 
 .carousel-item__subtitle {
@@ -127,7 +127,7 @@
   transform: translateY(25%);
   opacity: 0;
   visibility: hidden;
-  transition: 0.4s all ease-in-out;
+  transition: 0.2s all ease-in-out;
 }
 
 .carousel-item__title {
@@ -140,14 +140,14 @@
   transform: translateY(25%);
   opacity: 0;
   visibility: hidden;
-  transition: 0.6s all ease-in-out;
+  transition: 0.4s all ease-in-out;
 }
 
 .carousel-item__description {
   transform: translateY(25%);
   opacity: 0;
   visibility: hidden;
-  transition: 0.6s all ease-in-out;
+  transition: 0.4s all ease-in-out;
   margin-top: 35px;
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
@@ -168,18 +168,6 @@
   background-image: url("https://images.pexels.com/photos/92733/pexels-photo-92733.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
 }
 
-.carousel-item--4 .carousel-item__image {
-  background-image: url("https://images.pexels.com/photos/1008732/pexels-photo-1008732.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
-}
-
-.carousel-item--5 .carousel-item__image {
-  background-image: url("https://images.pexels.com/photos/1029614/pexels-photo-1029614.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-}
-
-.carousel-item--1 .carousel-item__image {
-  background-image: url("https://images.pexels.com/photos/991012/pexels-photo-991012.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-}
-
 .carousel-item__btn {
   width: 35%;
   color: #2C2C2C;
@@ -194,7 +182,7 @@
   transform: translateY(25%);
   opacity: 0;
   visibility: hidden;
-  transition: 0.6s all ease-in-out;
+  transition: 0.4s all ease-in-out;
 }
 
 .carousel__nav {
@@ -239,12 +227,12 @@
 .active2 .carousel-item__subtitle, .active2 .carousel-item__title, .active2 .carousel-item__description, .active2 .carousel-item__btn {
   transform: translateY(0);
   opacity: 1;
-  transition: 0.6s all ease-in-out;
+  transition: 0.4s all ease-in-out;
   visibility: visible;
 }
 
 .active2 .carousel-item__image {
-  transition: 0.6s all ease-in-out;
+  transition: 0.4s all ease-in-out;
   transform: translateX(0);
 }
 
