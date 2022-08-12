@@ -14,7 +14,6 @@ $third-accent-color: #FFD200;
     width: calc(100vw - 3.3rem);
     height: 100vh;
     display: flex;
-    flex-wrap: wrap;
     & > section {
         position: relative;
         height: 100vh;
@@ -63,23 +62,37 @@ $third-accent-color: #FFD200;
             display: flex;
             justify-content: flex-start;
             align-items: center;
+            position: relative;
             & > div {
                 color: $secondary-accent-color;
                 font-size: 2rem;
+                display: grid;
+                position: relative;
+                width: 100%;
                 & > div{
-
                     // Updates
+                    position: relative;
                     &:first-of-type {
-
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        & > div {
+                            flex: 1;
+                        }
                     }
 
                     // Selectors
                     &:last-of-type {
+                        place-self: center;
+                        width: 25rem;
+                        margin: auto;
                         & > button{
                             background-color: $primary-color;
                             color: $contrast-color;
                             border: solid 1px $contrast-color;
                             font-size: 1rem;
+                            padding: 0.5rem 1rem;
+                            margin: 1rem;
                             cursor: pointer;
                             &:hover {
                                 background-color: $contrast-color;

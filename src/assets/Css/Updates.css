@@ -7,7 +7,6 @@
   width: calc(100vw - 3.3rem);
   height: 100vh;
   display: flex;
-  flex-wrap: wrap;
 }
 .updates > section {
   position: relative;
@@ -58,16 +57,38 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
 }
 .updates > section:last-of-type > div {
   color: #0076C4;
   font-size: 2rem;
+  display: grid;
+  position: relative;
+  width: 100%;
+}
+.updates > section:last-of-type > div > div {
+  position: relative;
+}
+.updates > section:last-of-type > div > div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.updates > section:last-of-type > div > div:first-of-type > div {
+  flex: 1;
+}
+.updates > section:last-of-type > div > div:last-of-type {
+  place-self: center;
+  width: 25rem;
+  margin: auto;
 }
 .updates > section:last-of-type > div > div:last-of-type > button {
   background-color: #f2f1f1;
   color: #000;
   border: solid 1px #000;
   font-size: 1rem;
+  padding: 0.5rem 1rem;
+  margin: 1rem;
   cursor: pointer;
 }
 .updates > section:last-of-type > div > div:last-of-type > button:hover {

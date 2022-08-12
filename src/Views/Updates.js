@@ -1,8 +1,21 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Updates = (props) => {
     const [updatePage, setUpdatePage] = useState(0);
 
+    useEffect(() => {
+        const buttons = document.querySelector(".updateSelector").children;
+        for (let i = 0; i < buttons.length; i ++) {
+            buttons[i].addEventListener('click', function (){
+                for (let x = 0; x < buttons.length; x++) {
+                    buttons[x].classList.remove('activeButton');
+                }
+                buttons[i].classList.add('activeButton');
+            });
+        }
+        
+    }, []);
+    
     return (
         <>
             <section className="updateWrapper">
@@ -22,9 +35,11 @@ const Updates = (props) => {
                                 <div className="firstNews">
 
                                 </div>
+
                                 <div className="secondNews">
 
                                 </div>
+
                                 <div className="thirdNews">
 
                                 </div>
