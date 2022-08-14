@@ -34,8 +34,10 @@
   letter-spacing: -5px;
   margin: 0px;
   font-size: 4rem;
+  background-color: #f2f1f1;
 }
 .updates > section:first-of-type > div > h2 {
+  visibility: hidden;
   font-size: 1.8rem;
   margin: 0px;
   margin-left: 3vw;
@@ -52,7 +54,6 @@
   left: -15px;
 }
 .updates > section:last-of-type {
-  margin-left: 5rem;
   flex: 3;
   display: flex;
   justify-content: flex-start;
@@ -60,11 +61,17 @@
   position: relative;
 }
 .updates > section:last-of-type > div {
-  color: #0076C4;
   font-size: 2rem;
   display: grid;
   position: relative;
   width: 100%;
+  color: #000;
+}
+.updates > section:last-of-type > div > h1 {
+  margin: 0px;
+  margin-left: 7.5%;
+  margin-bottom: 1rem;
+  font-size: 3rem;
 }
 .updates > section:last-of-type > div > div {
   position: relative;
@@ -72,28 +79,109 @@
 .updates > section:last-of-type > div > div:first-of-type {
   display: flex;
   flex-direction: column;
+  position: relative;
   width: 100%;
+  height: 50vh;
+  min-height: 30rem;
+  margin-bottom: 5vh;
 }
 .updates > section:last-of-type > div > div:first-of-type > div {
   flex: 1;
+  width: max(90%, 40rem);
+  visibility: hidden;
+  margin: auto;
+  display: none;
+}
+.updates > section:last-of-type > div > div:first-of-type > div > div:first-of-type {
+  display: grid;
+  place-items: center;
+  flex: 1;
+}
+.updates > section:last-of-type > div > div:first-of-type > div > div:first-of-type > h1 {
+  font-size: 4rem;
+  margin: 0px;
+  transform: translateY(2vh);
+}
+.updates > section:last-of-type > div > div:first-of-type > div > div:first-of-type > h2 {
+  font-size: 1rem;
+  transform: translateY(-2vh);
+}
+.updates > section:last-of-type > div > div:first-of-type > div > div:nth-of-type(2) {
+  flex: 4;
+  display: grid;
+  place-items: center flex-start;
+}
+.updates > section:last-of-type > div > div:first-of-type > div > div:nth-of-type(2) > h2 {
+  background-color: #000;
+  color: #f2f1f1;
+  text-align: center;
+  margin: 0px;
+  font-size: 1rem;
+  transform: translateY(3vh);
+  padding: 0.75vh 3vw;
+}
+.updates > section:last-of-type > div > div:first-of-type > div > div:nth-of-type(2) > h1 {
+  margin: 0px;
+  font-size: 1rem;
+  transform: translateY(-1vh);
+}
+.updates > section:last-of-type > div > div:first-of-type > div > div:last-of-type {
+  flex: 1;
+  display: grid;
+  place-items: flex-end center;
+  visibility: hidden;
+}
+.updates > section:last-of-type > div > div:first-of-type > div > div:last-of-type > h3 {
+  font-size: 1rem;
+  margin: initial 0px;
+  position: relative;
+  transition: color ease-out 0.25s;
+}
+.updates > section:last-of-type > div > div:first-of-type > div > div:last-of-type > h3:hover {
+  color: #DE2F1F;
+  cursor: pointer;
 }
 .updates > section:last-of-type > div > div:last-of-type {
   place-self: center;
-  width: 25rem;
+  width: 15rem;
   margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .updates > section:last-of-type > div > div:last-of-type > button {
   background-color: #f2f1f1;
+  flex: 1;
   color: #000;
   border: solid 1px #000;
   font-size: 1rem;
   padding: 0.5rem 1rem;
   margin: 1rem;
   cursor: pointer;
+  max-width: 5rem;
 }
 .updates > section:last-of-type > div > div:last-of-type > button:hover {
   background-color: #000;
   color: #f2f1f1;
+}
+
+.firstNews {
+  visibility: visible !important;
+  display: flex !important;
+  border-top: solid 2px #000;
+}
+
+.secondNews {
+  visibility: visible !important;
+  display: flex !important;
+  border-top: solid 2px #000;
+  border-bottom: solid 2px #000;
+}
+
+.thirdNews {
+  visibility: visible !important;
+  display: flex !important;
+  border-bottom: solid 2px #000;
 }
 
 .updateWrapper {

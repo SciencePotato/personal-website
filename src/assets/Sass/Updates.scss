@@ -37,8 +37,10 @@ $third-accent-color: #FFD200;
                     letter-spacing: -5px;
                     margin: 0px;
                     font-size: 4rem;
+                    background-color: $primary-color;
                 }
                 & > h2 {
+                    visibility: hidden;
                     font-size: 1.8rem;
                     margin: 0px;
                     margin-left: 3vw;
@@ -57,43 +59,112 @@ $third-accent-color: #FFD200;
             }
         }
         &:last-of-type{
-            margin-left: 5rem;
             flex: 3;
             display: flex;
             justify-content: flex-start;
             align-items: center;
             position: relative;
             & > div {
-                color: $secondary-accent-color;
                 font-size: 2rem;
                 display: grid;
                 position: relative;
                 width: 100%;
+                color: $contrast-color;
+                & > h1 {
+                    margin: 0px;
+                    margin-left: 7.5%;
+                    margin-bottom: 1rem;
+                    font-size: 3rem;
+                }
                 & > div{
                     // Updates
                     position: relative;
                     &:first-of-type {
                         display: flex;
                         flex-direction: column;
+                        position: relative;
                         width: 100%;
+                        height: 50vh;
+                        min-height: 30rem;
+                        margin-bottom: 5vh;
                         & > div {
                             flex: 1;
+                            width: Max(90%, 40rem);
+                            visibility: hidden;
+                            margin: auto;
+                            display: none;
+                            & > div {
+                                &:first-of-type{
+                                    display: grid;
+                                    place-items: center;
+                                    flex: 1;
+                                    & > h1 {
+                                        font-size: 4rem;
+                                        margin: 0px;
+                                        transform: translateY(2vh);
+                                    }
+                                    & > h2 {
+                                        font-size: 1rem;
+                                        transform: translateY(-2vh);
+                                    }
+                                }
+                                &:nth-of-type(2) {
+                                    flex:  4;
+                                    display: grid;
+                                    place-items: center flex-start;
+                                    & > h2 {
+                                        background-color: $contrast-color;
+                                        color: $primary-color;
+                                        text-align: center;
+                                        margin: 0px;
+                                        font-size: 1rem;
+                                        transform: translateY(3vh);
+                                        padding: 0.75vh 3vw;
+                                    }
+                                    & > h1 {
+                                        margin: 0px;
+                                        font-size: 1rem;
+                                        transform: translateY(-1vh);
+                                    }
+                                }
+                                &:last-of-type {
+                                    flex:  1;
+                                    display: grid;
+                                    place-items: flex-end center;
+                                    visibility: hidden;
+                                    & > h3 {
+                                        font-size: 1rem;
+                                        margin: initial 0px;
+                                        position: relative;
+                                        transition: color ease-out 0.25s;
+                                        &:hover {
+                                            color: $accent-color;
+                                            cursor: pointer;
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
 
                     // Selectors
                     &:last-of-type {
                         place-self: center;
-                        width: 25rem;
+                        width: 15rem;
                         margin: auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
                         & > button{
                             background-color: $primary-color;
+                            flex: 1;
                             color: $contrast-color;
                             border: solid 1px $contrast-color;
                             font-size: 1rem;
                             padding: 0.5rem 1rem;
                             margin: 1rem;
                             cursor: pointer;
+                            max-width: 5rem;
                             &:hover {
                                 background-color: $contrast-color;
                                 color: $primary-color;
@@ -104,6 +175,25 @@ $third-accent-color: #FFD200;
             }
         }
     }
+}
+
+.firstNews{
+    visibility: visible !important;
+    display: flex !important;
+    border-top: solid 2px $contrast-color;
+}
+
+.secondNews{
+    visibility: visible !important;
+    display: flex !important;
+    border-top: solid 2px $contrast-color;
+    border-bottom: solid 2px $contrast-color;
+}
+
+.thirdNews{
+    visibility: visible !important;
+    display: flex !important;
+    border-bottom: solid 2px $contrast-color;
 }
 
 .updateWrapper {

@@ -162,11 +162,18 @@
 }
 
 .carousel-item--2 .carousel-item__image {
-  background-image: url("https://images.pexels.com/photos/921294/pexels-photo-921294.png?auto=compress&cs=tinysrgb&h=750&w=1260");
+  background-image: url("../image/eventful.png");
+  background-size: contain;
 }
 
 .carousel-item--3 .carousel-item__image {
-  background-image: url("https://images.pexels.com/photos/92733/pexels-photo-92733.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+  background-image: url("../image/ses.png");
+  background-size: contain;
+}
+
+.carousel-item--4 .carousel-item__image {
+  background-image: url("../image//infoshare.png");
+  background-size: contain;
 }
 
 .carousel-item__btn {

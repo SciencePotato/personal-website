@@ -85,8 +85,13 @@ const Projects = (props) => {
                         <div className="carousel-item__container">
                             <h2 className="carousel-item__subtitle"> May 2021 - Jun. 2021</h2>
                             <h1 className="carousel-item__title">Precaution</h1>
-                            <p className="carousel-item__description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur sint molestiae perferendis quisquam nihil, consequatur ea nemo rerum odit obcaecati quae a aliquam officia neque cumque fuga sequi accusamus aut? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit necessitatibus, ullam aspernatur vel culpa officiis tenetur voluptate enim. Vel, consequatur totam nam deleniti nesciunt at consectetur quis fuga quia eveniet!</p>
-                            <a className="carousel-item__btn" href="https://precautioninc.github.io/" target={"_blank"}> Continue to the website</a>
+                            <p className="carousel-item__description"> 
+                                In 2021, My friends and I were invited to All-star Code TEI, a short Hackathon-like event in which 
+                                students have to create websites or applications. Our creation, Precaution, was based on an Idea I had 
+                                during the Summer intensive, OSFA, which's whole purpose is to create online simulation to prevent scams.
+                                The Hackathon itself lasted a week, and we were able to create this website with Angular and Sass.
+                            </p>
+                            <a className="carousel-item__btn" href="https://precautioninc.github.io/" target={"_blank"}> Click to View Website</a>
                         </div>
                     </div>
                 </div>
@@ -98,8 +103,12 @@ const Projects = (props) => {
                         <div className="carousel-item__container">
                             <h2 className="carousel-item__subtitle">Nov. 2021 - Dec. 2021 </h2>
                             <h1 className="carousel-item__title">Eventful</h1>
-                            <p className="carousel-item__description">Clear Glass Window With Brown and White Wooden Frame iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-                            <a className="carousel-item__btn">Read the article</a>
+                            <p className="carousel-item__description">
+                                For the last few week of CodePath <b> Android</b> course, we were tasked to create a website, on no particularly theme. With this knowledge
+                                we choose a social app to tackle the challenge of socialization in a developing country. Users can create events based on 
+                                their liking and share it to other people. 
+                            </p>
+                            <a  href={'https://github.com/SciencePotato/Eventful'} className="carousel-item__btn">Check out the Repo</a>
                         </div>
                     </div>
                 </div>
@@ -111,47 +120,66 @@ const Projects = (props) => {
                         <div className="carousel-item__container">
                             <h2 className="carousel-item__subtitle"> Aug. 2022 - Aug. 2022</h2>
                             <h1 className="carousel-item__title">Capital Fun</h1>
-                            <p className="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-                            <a className="carousel-item__btn">Explore the palms</a>
+                            <p className="carousel-item__description">
+                                Capital Fun is a website created to promote financial awareness by making banking into a social game. We attempt to
+                                use systems, such as streak and battle pass, to promote daily interaction with their bank. 
+                            </p>
+                            <a href={'https://github.com/deybyr647/ses-hackathon-project/tree/dev'} className="carousel-item__btn">Check out the Repo</a>
                         </div>
                     </div>
                 </div>
                 
-                {/* TBA (Web base) */}
+                {/* InfoShare */}
                 <div className="carousel-item carousel-item--4">
+                    <div className="carousel-item__image"></div>
+                    <div className="carousel-item__info">
+                        <div className="carousel-item__container">
+                            <h2 className="carousel-item__subtitle"> Aug. 2022 - Aug. 2022</h2>
+                            <h1 className="carousel-item__title"> InfoShare </h1>
+                            <p className="carousel-item__description">
+                                College does not prepare you for the real life, and that's what we're trying to solve. InfoShare is an online platform to share
+                                questions and post answers for college students about what their future might look like. 
+                            </p>
+                            <a href={'https://github.com/SciencePotato/augusthackathon2022'} className="carousel-item__btn">Check out the Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+                {/* TBA (Web base) */}
+                <div className="carousel-item carousel-item--5">
                     <div className="carousel-item__image"></div>
                     <div className="carousel-item__info">
                         <div className="carousel-item__container">
                             <h2 className="carousel-item__subtitle"> TBA - ???</h2>
                             <h1 className="carousel-item__title">BU overflow </h1>
-                            <p className="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-                            <a className="carousel-item__btn">Explore the beach</a>
+                            <p className="carousel-item__description"></p>
+                            <a className="carousel-item__btn">TBD. </a>
                         </div>
                     </div>
                 </div>
             
                 {/* TBA (Web base) */}
-                <div className="carousel-item carousel-item--4">
+                <div className="carousel-item carousel-item--6">
                     <div className="carousel-item__image"></div>
                     <div className="carousel-item__info">
                         <div className="carousel-item__container">
                             <h2 className="carousel-item__subtitle"> TBA - ??</h2>
                             <h1 className="carousel-item__title">Game Lounge </h1>
-                            <p className="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-                            <a className="carousel-item__btn">Explore the beach</a>
+                            <p className="carousel-item__description"></p>
+                            <a className="carousel-item__btn">TBD. </a>
                         </div>
                     </div>
                 </div>
 
                 {/* TBA (Mobile base) */}
-                <div className="carousel-item carousel-item--5">
+                <div className="carousel-item carousel-item--7">
                     <div className="carousel-item__image"></div>
                     <div className="carousel-item__info">
                         <div className="carousel-item__container">
                             <h2 className="carousel-item__subtitle"> TBA - ??</h2>
                             <h1 className="carousel-item__title"> Walk It!</h1>
-                            <p className="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-                            <a className="carousel-item__btn">Explore the beach</a>
+                            <p className="carousel-item__description"></p>
+                            <a className="carousel-item__btn">TBD. </a>
                         </div>
                     </div>
                 </div>
