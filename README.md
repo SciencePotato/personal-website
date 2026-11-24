@@ -19,11 +19,34 @@ Using React and Sass, I am aiming to create a new personalize website. This webs
 - [ ] Modular for different size of website.
 - [ ] DarkMode is what I want to add in the future. The priority of this update is at the very minimal, so I don't have to worry about much of this.
 
-### Start React Project
-`npm start`
+### Local development
+
+```bash
+npm ci
+npm start
+```
+
+Open http://localhost:3000. The app imports the checked-in CSS under
+`src/assets/Css/`, so Sass is not required just to run it.
+The lowercase `.gitignore` keeps installed dependencies and local environment
+files out of Git on both case-sensitive and case-insensitive filesystems.
+
+### Production build
+
+```bash
+npm run build
+```
+
+Create React App writes the static site to `build/`. This command builds
+locally only; it does not publish to GitHub Pages.
 
 ### SASS Watch
-`Sass --watch src/assets/Sass:src/assets/Css`
+If you edit `src/assets/Sass/`, use an independently installed Dart Sass CLI
+(not included in this project's dependencies) to regenerate the imported CSS:
+
+```bash
+sass --watch src/assets/Sass:src/assets/Css
+```
 
 ### Deployment (Updates Github Page)
 `npm run deploy`
