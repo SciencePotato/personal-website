@@ -1,23 +1,24 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
+
+const titleText = "Thank you for Visiting!";
+const speed = 70;
+
 const Contact = (props) => {
-    const titleText = "Thank you for Visiting!";
-    const speed = 70;
-    let index = 0;
+    const titleRef = useRef(null);
 
     useEffect(() => {
-        addTypeH2();
-    }, [])
-
-    const addTypeH2 = () => {
-        if ( index < titleText.length) {
-            const typeWriter = document.getElementById("typeWriter");
-            typeWriter.innerHTML += titleText.charAt(index);
+        const typeWriter = titleRef.current;
+        if (!typeWriter) return;
+        let index = 0;
+        let timer;
+        const typeNext = () => {
             index++;
-            setTimeout(() => {
-                addTypeH2();
-            }, speed);
-        } 
-    }
+            typeWriter.textContent = titleText.slice(0, index);
+            if (index < titleText.length) timer = setTimeout(typeNext, speed);
+        };
+        typeNext();
+        return () => clearTimeout(timer);
+    }, []);
 
     return (
         <>
@@ -38,7 +39,7 @@ const Contact = (props) => {
                     <path fill="#004879" opacity="1" d="M0,288L1440,0L1440,320L0,320Z"></path>
                 </svg>
                 <section>
-                    <h2 id="typeWriter"> 
+                    <h2 id="typeWriter" ref={titleRef}>
                     </h2>
                 </section>
             </section>
