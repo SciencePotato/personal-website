@@ -28,23 +28,28 @@ aside > section > div:first-of-type {
   display: grid;
   place-items: center;
 }
-aside > section > div:nth-of-type(2) {
+aside > section > div:last-of-type {
+  flex: 1;
+}
+aside > section > div > .menu-toggle {
   display: grid;
   place-items: center;
   flex: 10;
   font-size: 2rem;
+  font-family: inherit;
+  border: 0;
+  background: none;
+  color: inherit;
+  padding: 0;
+  cursor: pointer;
   transition: all ease-in 0.1s;
 }
-aside > section > div:nth-of-type(2) > p {
-  margin: 0px;
-  padding: 0px;
-  font-weight: 700;
-}
-aside > section > div:nth-of-type(2):hover {
+aside > section > div > .menu-toggle:hover {
   color: #DE2F1F;
 }
-aside > section > div:last-of-type {
-  flex: 1;
+aside > section > div > .menu-toggle:focus-visible {
+  outline: 2px solid #DE2F1F;
+  outline-offset: -2px;
 }
 aside > section > div > svg {
   transform: rotateZ(90deg);

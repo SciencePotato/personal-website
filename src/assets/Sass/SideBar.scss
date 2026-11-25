@@ -31,24 +31,28 @@ aside {
                 display: grid;
                 place-items: center;
             }
-            &:nth-of-type(2) {
+            &:last-of-type {
+                flex: 1;
+            }
+            > .menu-toggle {
                 display: grid;
                 place-items: center;
                 flex: 10;
                 font-size: 2rem;
+                font-family: inherit;
+                border: 0;
+                background: none;
+                color: inherit;
+                padding: 0;
+                cursor: pointer;
                 transition: all ease-in 0.1s;
-
-                > p {
-                    margin: 0px;
-                    padding: 0px;
-                    font-weight: 700;
-                }
                 &:hover {
                     color: $accent-color;
                 }
-            }
-            &:last-of-type {
-                flex: 1;
+                &:focus-visible {
+                    outline: 2px solid $accent-color;
+                    outline-offset: -2px;
+                }
             }
             > svg {
                 transform: rotateZ(90deg);

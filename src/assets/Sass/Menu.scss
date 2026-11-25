@@ -23,7 +23,12 @@ $secondary-accent-color: #0076C4;
             & > div {
                 display: flex;
                 flex-direction: column;
-                & > h1 {
+                & > button {
+                    border: 0;
+                    background: none;
+                    color: inherit;
+                    text-align: left;
+                    font-weight: bold;
                     flex: 1;
                     font-size: 2rem;
                     margin: 2rem 0rem;
@@ -66,7 +71,7 @@ $secondary-accent-color: #0076C4;
             text-align: center;
             > div {
                 flex: 1;
-                > svg {
+                > a > svg {
                     border-radius: 0.5rem;       
                     cursor: pointer;
                     transition: all ease-out 0.1s;
@@ -79,6 +84,11 @@ $secondary-accent-color: #0076C4;
     }
 }   
 
+.menu button:focus-visible,
+.menu a:focus-visible {
+    outline: 2px solid $accent-color;
+    outline-offset: 4px;
+}
 
 @media screen and (max-height: 500px) {
 .menu {
@@ -87,7 +97,7 @@ $secondary-accent-color: #0076C4;
             padding-bottom: 1rem;
             place-content: center;
             & > div {
-                & > h1 {
+                & > button {
                     font-size: 2rem;
                     padding: 0.5rem 0px;
                     margin: 0px;

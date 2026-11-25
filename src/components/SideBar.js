@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Menu from "./Menu";
 
 const SideBar = (props) => {
     const [IsOpen, setIsOpen] = useState(false);
+    const menuToggleRef = useRef(null);
 
     const closeBar = () => {
         document.querySelector("aside").classList.remove("is-active");
@@ -25,7 +26,9 @@ const SideBar = (props) => {
                     <div>
                         <svg className="contrastMode" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 4c-4.418 0-8 3.582-8 8s3.582 8 8 8v-16z"/></svg>
                     </div>
-                    <div onClick={() =>{
+                    <button type="button" className="menu-toggle" ref={menuToggleRef}
+                        aria-label={IsOpen ? "Close menu" : "Open menu"}
+                        aria-expanded={IsOpen} aria-controls="site-menu" onClick={() =>{
                         if(IsOpen === true) {
                             closeBar();
                         } else {
@@ -33,7 +36,7 @@ const SideBar = (props) => {
                         }
                     }}>
                         ||
-                    </div>
+                    </button>
                     <div>
                         <svg onClick={() =>{
                             if (props.pageNumVal === 5)
@@ -43,7 +46,7 @@ const SideBar = (props) => {
                         }} xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M16 8v-4l8 8-8 8v-4h-16l8-8h8z"/></svg>
                     </div>
                 </section>
-                <Menu pageNumVal={props.pageNumVal} setPageNumState={props.setPageNumState} setIsOpen={setIsOpen}/>
+                <Menu isOpen={IsOpen} menuToggleRef={menuToggleRef} pageNumVal={props.pageNumVal} setPageNumState={props.setPageNumState} setIsOpen={setIsOpen}/>
             </aside>
             
             <aside className="rightSide close">

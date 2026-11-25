@@ -1,5 +1,23 @@
 # Personal Website
 
+## Menu regression checks
+
+```bash
+CI=true npm test -- --watchAll=false --runInBand src/components/Menu.test.js
+```
+
+After installing dependencies, this covers the native menu opener, closed-menu
+inertness, page selection, focus return and the existing social-link destinations.
+These are React/jsdom tests, not a complete browser audit.
+
+When editing menu styles, regenerate the CSS actually imported by the app:
+
+```bash
+sass src/assets/Sass/Menu.scss src/assets/Css/Menu.css
+sass src/assets/Sass/SideBar.scss src/assets/Css/SideBar.css
+```
+
+
 ## Deployment
 - [Github Page Version](https://sciencepotato.github.io/personal-website/)
 - [Herku Deployment](https://tacoscience.herokuapp.com/)
