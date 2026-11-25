@@ -19,7 +19,12 @@
   display: flex;
   flex-direction: column;
 }
-.menu > div:first-of-type > div > h1 {
+.menu > div:first-of-type > div > button {
+  border: 0;
+  background: none;
+  color: inherit;
+  text-align: left;
+  font-weight: bold;
   flex: 1;
   font-size: 2rem;
   margin: 2rem 0rem;
@@ -28,13 +33,13 @@
   cursor: pointer;
   position: relative;
 }
-.menu > div:first-of-type > div > h1:hover {
+.menu > div:first-of-type > div > button:hover {
   color: #DE2F1F;
 }
-.menu > div:first-of-type > div > h1:hover::before {
+.menu > div:first-of-type > div > button:hover::before {
   padding: 1rem 2px;
 }
-.menu > div:first-of-type > div > h1::before {
+.menu > div:first-of-type > div > button::before {
   content: "";
   transition: all ease-out 0.1s;
   position: absolute;
@@ -43,7 +48,7 @@
   padding: 2px;
   background-color: #DE2F1F;
 }
-.menu > div:first-of-type > div > h1::after {
+.menu > div:first-of-type > div > button::after {
   content: "";
   transition: all ease-out 0.1s;
   position: absolute;
@@ -60,13 +65,19 @@
 .menu > div:last-of-type > div {
   flex: 1;
 }
-.menu > div:last-of-type > div > svg {
+.menu > div:last-of-type > div > a > svg {
   border-radius: 0.5rem;
   cursor: pointer;
   transition: all ease-out 0.1s;
 }
-.menu > div:last-of-type > div > svg:hover {
+.menu > div:last-of-type > div > a > svg:hover {
   fill: #DE2F1F;
+}
+
+.menu button:focus-visible,
+.menu a:focus-visible {
+  outline: 2px solid #DE2F1F;
+  outline-offset: 4px;
 }
 
 @media screen and (max-height: 500px) {
@@ -74,7 +85,7 @@
     padding-bottom: 1rem;
     place-content: center;
   }
-  .menu > div:first-of-type > div > h1 {
+  .menu > div:first-of-type > div > button {
     font-size: 2rem;
     padding: 0.5rem 0px;
     margin: 0px;
